@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Willian Soares
+ * Copyright 2016 Willian Soares.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,8 +15,19 @@
  */
 package dijkstra;
 
-
-public class Teste {
-    int N = 5;
-    
+public class Dinner {
+    public static void main(String[] args) {
+        Table t = new Table();
+        Thread p0 = new Philosopher("Plato", 0, t);
+        Thread p1 = new Philosopher("Aristotle", 1, t);
+        Thread p2 = new Philosopher("Adam Smith", 2, t);
+        Thread p3 = new Philosopher("Treze Manero", 3, t);
+        Thread p4 = new Philosopher("Chuck Norris", 4, t);
+        
+        p0.start();
+        p1.start();
+        p2.start();
+        p3.start();
+        p4.start();
+    }
 }
