@@ -18,9 +18,9 @@ package dijkstra;
 public class Dinner {
     public static void main(String[] args) {
         Table t = new Table();
-        Thread p0 = new Philosopher("Plato", 0, t);
-        Thread p1 = new Philosopher("Aristotle", 1, t);
-        Thread p2 = new Philosopher("Adam Smith", 2, t);
+        Thread p0 = new Philosopher("Pratão", 0, t);//"Plato/Platão"
+        Thread p1 = new Philosopher("ArisToledo", 1, t);//Aristóteles
+        Thread p2 = new Philosopher("Irineu", 2, t);
         Thread p3 = new Philosopher("Treze Manero", 3, t);
         Thread p4 = new Philosopher("Chuck Norris", 4, t);
         

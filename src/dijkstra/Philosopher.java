@@ -40,19 +40,22 @@ public class Philosopher extends Thread {
         }
     }
 
+    /*
+    Method used to simulate a philosopher tinking
+    */
     public void think() {
         try {
             Thread.sleep(1000);
         } catch (Exception e) {
-            // TODO: handle exception
         }
     }
-
+    /*
+    Method used to simulate a philosopher eating
+    */
     public void eat() {
         try {
             Thread.sleep(1000);
         } catch (Exception e) {
-            // TODO: handle exception
         }
     }
 }
